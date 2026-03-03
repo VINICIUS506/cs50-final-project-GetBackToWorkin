@@ -1,0 +1,181 @@
+/* Everything below is styling for the settings page */
+body {
+    background-color: #2B2B2B;
+    color: white;
+    min-width: 350px;
+    margin: 0;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.settings-card {
+    padding: 20px;
+}
+
+.settings-card h1 {
+    font-size: 30px;
+    font-family: 'Arial Black', sans serif;
+    text-decoration: underline;
+}
+
+.settings-card p {
+    font-size: 15px;
+    color: #bbbbbb;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.settings-card h3 {
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.settings-card h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+}
+
+/* Styling for the text and time inputs */
+input[type="text"], input[type="time"] {
+    background-color: #181818;
+    border: 1px solid #444;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="time"]:focus {
+    border-color: #007bff; 
+} /* Highlight when clicking into input */ 
+
+/* Styling for the buttons */
+.settings-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.settings-card button:hover {
+    background-color: #218838;
+}
+
+#save-settings {
+    margin-top: 25px;
+    padding: 12px;
+}
+
+/* Styling for the banned site list */
+.site-item {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    background-color: #181818;
+    padding: 6px 12px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    font-size: 14px;
+}
+
+.remove-btn {
+    color: #4da3ff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+.remove-btn:hover {
+    background-color: rgba(77, 163, 255, 0.1);
+    color: #80bdff;
+}
+
+/* Styling the time inputs group */
+.time-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.time-inputs label {
+    font-size: 14px;
+    color: #bbbbbb;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+/* Styling for the dropdown days container */
+details {
+    background-color: #181818;
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 14px;
+    color: #bbbbbb;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* The list inside the dropdown */
+.days-list {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.days-list label {
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.day-checkbox {
+    accent-color: #28a745; 
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Styling for the color settings */
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#theme-color-picker {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    background: transparent;
+}

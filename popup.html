@@ -1,0 +1,73 @@
+<!-- html for the settings page -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main class="settings-card">
+            <h1>GetBackToWorkin!</h1>
+            <p>Settings: Add URLs. Remove URLs. Submit/update your work schedule. Color customization.</p>
+            <!-- Site management section (add/remove sites) -->
+            <div class="site-management">
+                <h3>Banned Sites</h3>
+                <div class="input-group">
+                    <input type="text" id="site-input" placeholder="Website URL">
+                    <button type="button" id="add-site">Add</button>
+                </div>
+                <div id="site-list"></div>
+            </div>
+
+            <!-- Work schedule section -->
+            <div class="schedule-settings">
+                <h3> Work Schedule</h3>
+
+                <!-- Work hours -->
+                <div class="time-section">
+                    <h5>Work Hours</h5>
+                    <div class="time-inputs">
+                        <label for="start-hour">Start:</label>
+                        <input type="time" id="start-hour" placeholder="Clock in">
+
+                        <label for="end-hour">End:</label>
+                        <input type="time" id="end-hour" placeholder="Clock out">
+                    </div>
+                </div>
+
+                <!-- Work days -->
+                <div class="days-section">
+                    <h5>Work Days</h5>
+                    <details>
+                        <summary>Select Days</summary>
+                        <div class="days-list">
+                            <label><input type="checkbox" class="day-checkbox" value="Sunday">Sunday</label>
+                            <label><input type="checkbox" class="day-checkbox" value="Monday">Monday</label>
+                            <label><input type="checkbox" class="day-checkbox" value="Tuesday">Tuesday</label>
+                            <label><input type="checkbox" class="day-checkbox" value="Wednesday">Wednesday</label>
+                            <label><input type="checkbox" class="day-checkbox" value="Thursday">Thursday</label>
+                            <label><input type="checkbox" class="day-checkbox" value="Friday">Friday</label>
+                            <label><input type="checkbox" class="day-checkbox" value="Saturday">Saturday</label>
+                        </div>
+                    </details>
+                </div>
+
+                <button type="button" id="save-settings">Save Schedule Settings</button>
+            </div>
+
+            <!-- Color customization -->
+            <div class="Color-settings">
+                <h3>Color Customization</h3>
+                <p>Edit the background color of the red warning pop-up on banned sites.</p>
+                <div class="color-picker-container">
+                    <input type="color" id="theme-color-picker" value="#ff0000">
+                    <button id="reset-color">Reset to Default (Red)</button>
+                </div>
+            </div>
+            
+        </main>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

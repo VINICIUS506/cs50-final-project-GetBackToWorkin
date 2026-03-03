@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "GetBackToWorkin!",
+    "description": "Obnoxious extension to prevent you from accessing distracting websites during work hours. Click extension icon to start and adjust settings.",
+    "version": "1.0.0",
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["assets/*.mp3"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
