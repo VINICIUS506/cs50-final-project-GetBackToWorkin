@@ -1,4 +1,8 @@
 # GetBackToWorkin
+
+### Verified CS50x Certificate of Completion:
+[View my CS50x Certificate](https://certificates.cs50.io/6ba4e0cb-175f-4950-ae9b-38ea4ef5b35e.png?size=letter)
+
 #### Video Demo: https://youtu.be/_eEswpE0U_U
 #### Description:
 What my project does:
